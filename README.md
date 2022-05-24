@@ -19,9 +19,8 @@ you will need to have
 the [NVIDIA Container Toolkit
 installed](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html) 
 to make the GPU available to Docker containers. Note that AMD GPUs are not
-currently supported, as Bwb uses the `--gpus` option in Docker, which [does not
-support AMD GPUs](https://github.com/docker/cli/issues/2063** at time of
-writing.
+currently supported, as Bwb uses the `--gpus` option in Docker, which does not
+support AMD GPUs at time of writing (this is an open issue, see https://github.com/docker/cli/issues/2063).
 
 ### Installing GPU Drivers
 The following instructions should work for an Ubuntu 20.04 system.
@@ -137,13 +136,13 @@ images you do not wish to use, or move them to another directory.
 ## References
 
 * CLIJ
- > Robert Haase, Loic Alain Royer, Peter Steinbach, Deborah Schmidt,
- >     Alexandr Dibrov, Uwe Schmidt, Martin Weigert, Nicola Maghelli,
- >     Pavel Tomancak, Florian Jug, Eugene W Myers. CLIJ: GPU-accelerated
- >     image processing for everyone. Nat Methods 17, 5-6 (2020)
- >     doi:10.1038/s41592-019-0650-1
+	> Robert Haase, Loic Alain Royer, Peter Steinbach, Deborah Schmidt,
+	>     Alexandr Dibrov, Uwe Schmidt, Martin Weigert, Nicola Maghelli,
+	>     Pavel Tomancak, Florian Jug, Eugene W Myers. CLIJ: GPU-accelerated
+	>     image processing for everyone. Nat Methods 17, 5-6 (2020)
+	>     doi:10.1038/s41592-019-0650-1
  
- Workflow is taken from the Supplementary Materials section of this paper.
+	 Workflow is taken from the Supplementary Materials section of this paper.
  
 * Dataset used is the one given in the Supplementary Materials section of the
   CLIJ paper:
@@ -151,7 +150,7 @@ images you do not wish to use, or move them to another directory.
 
 * Fiji:
   
- > Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V.,
- >   Longair, M., Pietzsch, T., … Cardona, A. (2012). Fiji: an
- >   open-source platform for biological-image analysis. Nature Methods,
- >   9(7), 676–682. doi:10.1038/nmeth.2019
+    > Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V.,
+	>   Longair, M., Pietzsch, T., … Cardona, A. (2012). Fiji: an
+	>   open-source platform for biological-image analysis. Nature Methods,
+	>   9(7), 676–682. doi:10.1038/nmeth.2019
