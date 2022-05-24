@@ -32,6 +32,7 @@ class OWdownloadImages(OWBwBWidget):
     min=pset(0)
     max=pset(10)
     outputDir=pset("/data")
+    replaceExisting=pset(False)
     def __init__(self):
         super().__init__(self.docker_image_name, self.docker_image_tag)
         with open(getJsonName(__file__,"downloadImages")) as f:

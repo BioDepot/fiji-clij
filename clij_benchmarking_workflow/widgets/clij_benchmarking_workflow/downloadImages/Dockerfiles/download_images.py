@@ -9,6 +9,7 @@ import shutil
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--output-dir", type=pathlib.Path, default=os.getcwd())
+parser.add_argument("--replace-existing", action="store_true")
 parser.add_argument("pattern", type=str)
 parser.add_argument("min", type=int, nargs='?', default=0)
 parser.add_argument("max", type=int)
@@ -27,9 +28,12 @@ def downloadUrl(url: str):
     url_obj = urllib3.util.parse_url(url)
     filename = os.path.basename(url_obj.path)
     full_filename = output_dir / filename
-    with http.request('GET', url, preload_content=False) as r, open(full_filename.absolute(), 'wb') as out_file: 
-        shutil.copyfileobj(r, out_file)
-    print("{} downloaded".format(filename), flush=True)
+    if(not full_filename.exists() or ns.replace_existing):
+        with http.request('GET', url, preload_content=False) as r, open(full_filename.absolute(), 'wb') as out_file: 
+            shutil.copyfileobj(r, out_file)
+        print("{} downloaded".format(filename), flush=True)
+    else:
+        print("{} already exists, skipping".format(filename), flush=True)
 
 
 sequence = [ns.pattern % i for i in range(ns.min, ns.max+1)]
