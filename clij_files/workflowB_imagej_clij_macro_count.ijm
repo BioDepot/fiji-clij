@@ -51,20 +51,19 @@ sampleY = 0.52;
 sampleZ = 2.0;
 noiseThreshold = 5;
 
+fileList = getFileList(sourceFolder);
 
 run("CLIJ Macro Extensions", "cl_device=" + cl_device);
 Ext.CLIJ_clear();
 
-for (t = 117; t < 128; t+=1) {
-	print("Processing image " + t);
+for (i = 0; i < fileList.length; i++) {
+        filename = fileList[i];
+	print("Processing image " + filename);
 	run("Close All");
 
 	startTimeFull = getTime();
 
-    strNumber = "000000" + t;
-	filename = substring(strNumber, lengthOf(strNumber) - 6, lengthOf(strNumber) ) + ".raw.tif";
-
-	IJ.log(filename);
+	// load image
 	open(sourceFolder + filename);
 	run("32-bit");
 	makeRectangle(0, 0, 400, 1024);

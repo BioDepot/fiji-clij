@@ -51,19 +51,16 @@ sampleY = 0.52;
 sampleZ = 2.0;
 noiseThreshold = 5;
 
+fileList = getFileList(sourceFolder);
 
-
-for (t = 117; t < 128; t+=1) {
-	print("Processing image " + t);
+for (i = 0; i < fileList.length; i++) {
+       filename = fileList[i];
+       	print("Processing image " + filename);
 	run("Close All");
 
 	startTimeFull = getTime();
 
 	// load image
-    strNumber = "000000" + t;
-	filename = substring(strNumber, lengthOf(strNumber) - 6, lengthOf(strNumber) ) + ".raw.tif";
-
-	IJ.log(filename);
 	open(sourceFolder + filename);
 	run("32-bit");
 	makeRectangle(0, 0, 400, 1024);
