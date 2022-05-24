@@ -1,14 +1,14 @@
-<?xml version="1.0" ?><scheme description="" title="clij-benchmarking" version="2.0">
+<?xml version="1.0" ?><scheme description="" title="clij-benchmarking-workflow" version="2.0">
 	<nodes>
-		<node id="0" name="downloadURL" position="(304.0, 198.0)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWdownloadURL.OWdownloadURL" title="Download macros" version=""/>
-		<node id="1" name="downloadURL" position="(304.0, 378.0)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWdownloadURL.OWdownloadURL" title="Download images" version=""/>
-		<node id="2" name="Start" position="(150, 300)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWStart.OWStart" title="Start" version=""/>
-		<node id="3" name="fijiOCL" position="(450, 300)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWfijiOCL.OWfijiOCL" title="Benchmark GPU" version=""/>
-		<node id="4" name="fijiOCL" position="(600, 300)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWfijiOCL.OWfijiOCL" title="Benchmark CPU" version=""/>
-		<node id="5" name="jupyter_stats" position="(772.0, 208.0)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWjupyter_stats.OWjupyter_stats" title="Analyze times" version=""/>
-		<node id="6" name="jupyter_stats" position="(771.0, 382.0)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWjupyter_stats.OWjupyter_stats" title="Analyze differences" version=""/>
-		<node id="7" name="jupyter_stats" position="(936.0, 208.0)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWjupyter_stats.OWjupyter_stats" title="Show time results" version=""/>
-		<node id="8" name="jupyter_stats" position="(936.0, 383.0)" project_name="clij-benchmarking" qualified_name="clij_benchmarking.OWjupyter_stats.OWjupyter_stats" title="Show difference results" version=""/>
+		<node id="0" name="downloadURL" position="(304.0, 198.0)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWdownloadURL.OWdownloadURL" title="Download macros" version=""/>
+		<node id="1" name="downloadURL" position="(304.0, 378.0)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWdownloadURL.OWdownloadURL" title="Download images" version=""/>
+		<node id="2" name="Start" position="(150, 300)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWStart.OWStart" title="Start" version=""/>
+		<node id="3" name="fijiOCL" position="(450, 300)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWfijiOCL.OWfijiOCL" title="Benchmark GPU" version=""/>
+		<node id="4" name="fijiOCL" position="(600, 300)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWfijiOCL.OWfijiOCL" title="Benchmark CPU" version=""/>
+		<node id="5" name="jupyter_stats" position="(772.0, 208.0)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWjupyter_stats.OWjupyter_stats" title="Analyze times" version=""/>
+		<node id="6" name="jupyter_stats" position="(771.0, 382.0)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWjupyter_stats.OWjupyter_stats" title="Analyze differences" version=""/>
+		<node id="7" name="jupyter_stats" position="(936.0, 208.0)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWjupyter_stats.OWjupyter_stats" title="Show time results" version=""/>
+		<node id="8" name="jupyter_stats" position="(936.0, 383.0)" project_name="clij-benchmarking-workflow" qualified_name="clij_benchmarking_workflow.OWjupyter_stats.OWjupyter_stats" title="Show difference results" version=""/>
 	</nodes>
 	<links>
 		<link enabled="true" id="0" sink_channel="trigger" sink_node_id="0" source_channel="Trigger" source_node_id="2"/>
