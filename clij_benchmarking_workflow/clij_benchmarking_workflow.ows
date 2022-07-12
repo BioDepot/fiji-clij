@@ -34,32 +34,35 @@
 	</annotations>
 	<thumbnail/>
 	<node_properties>
-		<properties format="pickle" node_id="0">gAN9cQAoWAMAAABVUkxxAV1xAihYZwAAAGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNv
-bS9CaW9EZXBvdC9maWppLWNsaWovbWFzdGVyL2NsaWpfZmlsZXMvd29ya2Zsb3dCX2ltYWdlal9t
-YWNyb19jb3VudC5pam1xA1hsAAAAaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Jp
-b0RlcG90L2ZpamktY2xpai9tYXN0ZXIvY2xpal9maWxlcy93b3JrZmxvd0JfaW1hZ2VqX2NsaWpf
-bWFjcm9fY291bnQuaWptcQRYTQAAAGh0dHBzOi8vZ2l0aHViLmNvbS9jbGlqL2NsaWotYmVuY2ht
-YXJraW5nL3Jhdy9tYXN0ZXIvcGxvdHRpbmcvcHl0aG9uL3V0aWxzLnB5cQVYYgAAAGh0dHBzOi8v
-cmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9CaW9EZXBvdC9maWppLWNsaWovbWFzdGVyL2NsaWpf
-ZmlsZXMvQW5hbHlzZVdvcmtmbG93QlRpbWVzLmlweW5icQZYYAAAAGh0dHBzOi8vcmF3LmdpdGh1
-YnVzZXJjb250ZW50LmNvbS9CaW9EZXBvdC9maWppLWNsaWovbWFzdGVyL2NsaWpfZmlsZXMvQW5h
-bHlzZV9kaWZmZXJlbmNlcy5pcHluYnEHZVgPAAAAY29uY2F0ZW5hdGVGaWxlcQhYAAAAAHEJWBIA
-AABjb250cm9sQXJlYVZpc2libGVxCohYCgAAAGRlY29tcHJlc3NxC4hYCQAAAGRpcmVjdG9yeXEM
-WBcAAAAvZGF0YS9iZW5jaG1hcmsvc2NyaXB0L3ENWA4AAABleHBvcnRHcmFwaGljc3EOiVgVAAAA
-aW5wdXRDb25uZWN0aW9uc1N0b3JlcQ99cRBYBwAAAHRyaWdnZXJxEV1xEksBYXNYBwAAAGl0ZXJh
-dGVxE4hYDwAAAGl0ZXJhdGVTZXR0aW5nc3EUfXEVKFgNAAAAaXRlcmFibGVBdHRyc3EWXXEXWAMA
-AABVUkxxGGFYCAAAAG5Xb3JrZXJzcRlLA1gEAAAAZGF0YXEaY2NvbGxlY3Rpb25zCk9yZGVyZWRE
-aWN0CnEbKVJxHFgDAAAAVVJMcR19cR4oWAkAAABncm91cFNpemVxH1gBAAAAMXEgWAcAAAB0aHJl
-YWRzcSFoIFgDAAAAcmFtcSJYAQAAADBxI3VzWA0AAABpdGVyYXRlZEF0dHJzcSRdcSVoHWF1WAgA
-AABuV29ya2Vyc3EmSwNYDgAAAG9wdGlvbnNDaGVja2VkcSd9cSgoWAoAAABkZWNvbXByZXNzcSmJ
-WA8AAABjb25jYXRlbmF0ZUZpbGVxKol1WAcAAABydW5Nb2RlcStLAlgLAAAAcnVuVHJpZ2dlcnNx
-LF1xLVgHAAAAdHJpZ2dlcnEuYVgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEvQzIB2dDLAAIAAAAA
-A1IAAAGhAAAG4gAAAywAAANSAAABuQAABuIAAAMpAAAAAAAAAAAHgHEwWAwAAAB0cmlnZ2VyUmVh
-ZHlxMX1xMlgHAAAAdHJpZ2dlcnEziXNYBgAAAHVzZUdwdXE0iVgMAAAAdXNlU2NoZWR1bGVycTWJ
-WAsAAABfX3ZlcnNpb25fX3E2SwF1Lg==
+		<properties format="pickle" node_id="0">gAN9cQAoWAMAAABVUkxxAV1xAihYjgAAAGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNv
+bS9CaW9EZXBvdC9maWppLWNsaWovZDA3M2M1YmZmYTNjMWRjYjA1Y2JmZTQ3OGEwMzU0MjgzY2Uw
+MjU4MC9jbGlqX2ZpbGVzL3dvcmtmbG93Ql9pbWFnZWpfY2xpal9tYWNyb19jb3VudC5pam1xA1iJ
+AAAAaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Jpb0RlcG90L2ZpamktY2xpai9k
+MDczYzViZmZhM2MxZGNiMDVjYmZlNDc4YTAzNTQyODNjZTAyNTgwL2NsaWpfZmlsZXMvd29ya2Zs
+b3dCX2ltYWdlal9tYWNyb19jb3VudC5pam1xBFh6AAAAaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNv
+bnRlbnQuY29tL2NsaWovY2xpai1iZW5jaG1hcmtpbmcvNzQzM2ExNzVkNWVkNmVhY2Q5OWQ3ODUw
+MmUyM2UxMDI2MzdjMzdiOC9wbG90dGluZy9weXRob24vdXRpbHMucHlxBViCAAAAaHR0cHM6Ly9y
+YXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Jpb0RlcG90L2ZpamktY2xpai9kMDczYzViZmZhM2Mx
+ZGNiMDVjYmZlNDc4YTAzNTQyODNjZTAyNTgwL2NsaWpfZmlsZXMvQW5hbHlzZV9kaWZmZXJlbmNl
+cy5pcHluYnEGWIQAAABodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQmlvRGVwb3Qv
+ZmlqaS1jbGlqLzExZjI0NTEzY2YzOTkxMjIzYTc4NGVmYmE4NGMzM2FhZjIwOGNmYmEvY2xpal9m
+aWxlcy9BbmFseXNlV29ya2Zsb3dCVGltZXMuaXB5bmJxB2VYDwAAAGNvbmNhdGVuYXRlRmlsZXEI
+WAAAAABxCVgSAAAAY29udHJvbEFyZWFWaXNpYmxlcQqIWAoAAABkZWNvbXByZXNzcQuIWAkAAABk
+aXJlY3RvcnlxDFgXAAAAL2RhdGEvYmVuY2htYXJrL3NjcmlwdC9xDVgOAAAAZXhwb3J0R3JhcGhp
+Y3NxDolYFQAAAGlucHV0Q29ubmVjdGlvbnNTdG9yZXEPfXEQWAcAAAB0cmlnZ2VycRFdcRJLAWFz
+WAcAAABpdGVyYXRlcROIWA8AAABpdGVyYXRlU2V0dGluZ3NxFH1xFShYDQAAAGl0ZXJhYmxlQXR0
+cnNxFl1xF1gDAAAAVVJMcRhhWAgAAABuV29ya2Vyc3EZSwNYBAAAAGRhdGFxGmNjb2xsZWN0aW9u
+cwpPcmRlcmVkRGljdApxGylScRxYAwAAAFVSTHEdfXEeKFgJAAAAZ3JvdXBTaXplcR9YAQAAADFx
+IFgHAAAAdGhyZWFkc3EhaCBYAwAAAHJhbXEiWAEAAAAwcSN1c1gNAAAAaXRlcmF0ZWRBdHRyc3Ek
+XXElaB1hdVgIAAAAbldvcmtlcnNxJksDWA4AAABvcHRpb25zQ2hlY2tlZHEnfXEoKFgKAAAAZGVj
+b21wcmVzc3EpiVgPAAAAY29uY2F0ZW5hdGVGaWxlcSqJdVgHAAAAcnVuTW9kZXErSwJYCwAAAHJ1
+blRyaWdnZXJzcSxdcS1YBwAAAHRyaWdnZXJxLmFYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlxL0My
+AdnQywACAAAAAANSAAABoQAABuIAAAMRAAADUgAAAaEAAAbiAAADEQAAAAAAAAAAB4BxMFgMAAAA
+dHJpZ2dlclJlYWR5cTF9cTJYBwAAAHRyaWdnZXJxM4lzWAYAAAB1c2VHcHVxNIlYDAAAAHVzZVNj
+aGVkdWxlcnE1iVgLAAAAX192ZXJzaW9uX19xNksBdS4=
 </properties>
 		<properties format="literal" node_id="1">{'controlAreaVisible': True, 'exportGraphics': False, 'inputConnectionsStore': {}, 'iterate': False, 'iterateSettings': {'iterableAttrs': [], 'nWorkers': 1}, 'nWorkers': 1, 'optionsChecked': {}, 'runMode': 0, 'runTriggers': [], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01\x83\x00\x00\x00\x93\x00\x00\x03\xf8\x00\x00\x01\x95\x00\x00\x01\x83\x00\x00\x00\x93\x00\x00\x03\xf8\x00\x00\x01\x95\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'triggerReady': {}, 'useGpu': False, 'useScheduler': False, '__version__': 1}</properties>
-		<properties format="literal" node_id="2">{'additional': '', 'addupdatesite': [], 'controlAreaVisible': True, 'exportGraphics': True, 'fijidir': '', 'headless': False, 'inputConnectionsStore': {'macrotrigger': [2], 'param': [9]}, 'installfiji': '', 'iterate': False, 'iterateSettings': {'iterableAttrs': ['addupdatesite'], 'nWorkers': 1}, 'macrofile': '/data/benchmark/script/workflowB_imagej_clij_macro_count.ijm', 'nWorkers': 1, 'optionsChecked': {'fijidir': False, 'installfiji': False, 'overwrite': False, 'headless': False, 'pluginsdir': False, 'macrofile': True, 'script': False, 'updatefiji': False, 'param': True, 'quitnow': False, 'addupdatesite': False, 'additional': False}, 'overwrite': False, 'param': '', 'pluginsdir': '', 'quitnow': True, 'runMode': 2, 'runTriggers': ['macrotrigger', 'param'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03\x1f\x00\x00\x00\xf3\x00\x00\x065\x00\x00\x03\n\x00\x00\x03\x1f\x00\x00\x00\xf3\x00\x00\x065\x00\x00\x03\n\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'script': False, 'triggerReady': {'datatrigger': False, 'macrotrigger': True, 'param': False}, 'updatefiji': False, 'useGpu': True, 'useScheduler': False, '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'additional': '', 'addupdatesite': [], 'controlAreaVisible': True, 'exportGraphics': True, 'fijidir': '', 'headless': False, 'inputConnectionsStore': {'macrotrigger': [2], 'param': [9]}, 'installfiji': '', 'iterate': False, 'iterateSettings': {'iterableAttrs': ['addupdatesite'], 'nWorkers': 1}, 'macrofile': '/data/benchmark/script/workflowB_imagej_clij_macro_count.ijm', 'nWorkers': 1, 'optionsChecked': {'fijidir': False, 'installfiji': False, 'overwrite': False, 'headless': False, 'pluginsdir': False, 'macrofile': True, 'script': False, 'updatefiji': False, 'param': True, 'quitnow': False, 'addupdatesite': False, 'additional': False}, 'overwrite': False, 'param': '', 'pluginsdir': '', 'quitnow': True, 'runMode': 2, 'runTriggers': ['macrotrigger', 'param'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03\x1f\x00\x00\x00\xf3\x00\x00\x065\x00\x00\x03\n\x00\x00\x03\x1f\x00\x00\x00\xf3\x00\x00\x065\x00\x00\x03\n\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'script': False, 'triggerReady': {'datatrigger': False, 'macrotrigger': False, 'param': False}, 'updatefiji': False, 'useGpu': True, 'useScheduler': False, '__version__': 1}</properties>
 		<properties format="literal" node_id="3">{'additional': '', 'addupdatesite': [], 'controlAreaVisible': True, 'exportGraphics': True, 'fijidir': '', 'headless': False, 'inputConnectionsStore': {'param': [3]}, 'installfiji': '', 'iterate': False, 'iterateSettings': {'iterableAttrs': ['addupdatesite'], 'nWorkers': 1}, 'macrofile': '/data/benchmark/script/workflowB_imagej_macro_count.ijm', 'nWorkers': 1, 'optionsChecked': {'fijidir': False, 'installfiji': False, 'overwrite': False, 'headless': False, 'pluginsdir': False, 'macrofile': True, 'script': False, 'updatefiji': False, 'param': True, 'quitnow': False, 'addupdatesite': False, 'additional': False}, 'overwrite': False, 'param': '', 'pluginsdir': '', 'quitnow': True, 'runMode': 2, 'runTriggers': ['param'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03R\x00\x00\x01\xb9\x00\x00\x06h\x00\x00\x03\xd0\x00\x00\x03R\x00\x00\x01\xb9\x00\x00\x06h\x00\x00\x03\xd0\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'script': False, 'triggerReady': {'datatrigger': False, 'param': False}, 'updatefiji': False, 'useGpu': False, 'useScheduler': False, '__version__': 1}</properties>
 		<properties format="literal" node_id="4">{'allowRoot': False, 'autoyes': True, 'browser': '', 'certfile': '', 'clientca': '', 'config': '', 'controlAreaVisible': True, 'debug': False, 'execute': True, 'exportGraphics': False, 'generateConfig': False, 'inputConnectionsStore': {'outlineTrigger': [4]}, 'ip': '0.0.0.0', 'iterate': False, 'iterateSettings': {'iterableAttrs': [], 'nWorkers': 1}, 'keyfile': '', 'loglevel': '30', 'nWorkers': 1, 'nomathjax': False, 'optionsChecked': {'startingNotebook': True, 'type': True, 'timeout': True, 'outputNotebook': True, 'debug': False, 'generateConfig': False, 'autoyes': False, 'allowRoot': False, 'loglevel': False, 'config': False, 'transport': False, 'keyfile': False, 'certfile': False, 'clientca': False, 'nomathjax': False, 'browser': False, 'execute': False}, 'outputNotebook': '/data/benchmark/out/Times.ipynb', 'port': 8888, 'runMode': 2, 'runTriggers': ['outlineTrigger'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03R\x00\x00\x01\xb9\x00\x00\x06b\x00\x00\x03\xcf\x00\x00\x03R\x00\x00\x01\xb9\x00\x00\x06b\x00\x00\x03\xcf\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'startingNotebook': '/data/benchmark/script/AnalyseWorkflowBTimes.ipynb', 'subcommand': 'nbconvert', 'timeout': -1, 'transport': '', 'triggerReady': {'outlineTrigger': False}, 'type': 'notebook', 'useGpu': False, 'useScheduler': False, '__version__': 1}</properties>
 		<properties format="literal" node_id="5">{'allowRoot': False, 'autoyes': True, 'browser': '', 'certfile': '', 'clientca': '', 'config': '', 'controlAreaVisible': True, 'debug': False, 'execute': True, 'exportGraphics': False, 'generateConfig': False, 'inputConnectionsStore': {'outlineTrigger': [4]}, 'ip': '0.0.0.0', 'iterate': False, 'iterateSettings': {'iterableAttrs': [], 'nWorkers': 1}, 'keyfile': '', 'loglevel': '30', 'nWorkers': 1, 'nomathjax': False, 'optionsChecked': {'startingNotebook': True, 'type': True, 'timeout': True, 'outputNotebook': True, 'debug': False, 'generateConfig': False, 'autoyes': False, 'allowRoot': False, 'loglevel': False, 'config': False, 'transport': False, 'keyfile': False, 'certfile': False, 'clientca': False, 'nomathjax': False, 'browser': False, 'execute': False}, 'outputNotebook': '/data/benchmark/out/Differences.ipynb', 'port': 8888, 'runMode': 2, 'runTriggers': ['outlineTrigger'], 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03R\x00\x00\x01\xb9\x00\x00\x06b\x00\x00\x03\xcf\x00\x00\x03R\x00\x00\x01\xb9\x00\x00\x06b\x00\x00\x03\xcf\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'startingNotebook': '/data/benchmark/script/Analyse_differences.ipynb', 'subcommand': 'nbconvert', 'timeout': -1, 'transport': '', 'triggerReady': {'outlineTrigger': False}, 'type': 'notebook', 'useGpu': False, 'useScheduler': False, '__version__': 1}</properties>
