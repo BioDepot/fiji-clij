@@ -30,6 +30,8 @@ The following instructions should work for an Ubuntu 20.04 system.
 sudo apt update && sudo apt upgrade
 # Install NVIDIA server driver 510:
 sudo apt install nvidia-driver-510-server
+# Hold the nvidia driver at the current version to prevent unintentional updates
+sudo apt-mark hold nvidia-driver-510-server
 ```
 You may need to **reboot your system** to finalize installation of the drivers.
 Afterwards, check if your GPU is recognized by running
