@@ -159,6 +159,18 @@ in the chosen output directory; if you have already downloaded images once, and
 wish to re-run the workflow with a smaller subset of images, either delete the
 images you do not wish to use, or move them to another directory.
 
+## Licensing
+
+This workflow is free software, under the BSD license; see
+[`LICENSE.txt`](LICENSE.txt) for more information.
+
+The ImageJ macros and Jupyter notebooks in `clij_files` are adapted
+from those in the original [CLIJ benchmarking
+repository](https://github.com/clij/clij-benchmarking) by the authors
+of CLIJ, and are licensed under the BSD license as well. See
+[`clij_files/LICENSE.txt`](clij_files/LICENSE.txt) for more
+information.
+
 ## References
 
 * CLIJ
