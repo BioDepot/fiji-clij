@@ -39,7 +39,30 @@ to make the GPU available to Docker containers.
 
 ## AWS Setup
 
-### Using the AMI
+The following are instructions for launching a virtual machine
+instance on AWS to run the workflow. You will need to log in to the
+[AWS console](https://aws.amazon.com) before continuing; additionally,
+if you wish to use the AMI, you must make sure your region (found in
+the top-right corner next to your username) is set to `us-east-2`
+(Ohio), since the AMI is stored in that region.
+
+If you are using the AMI, you may skip the steps [Launch
+instance](#launch-instance) and [Choose an image](#choose-an-image)
+below by using [this
+link](https://console.aws.amazon.com/ec2/v2/home?region=us-east-2#LaunchInstanceWizard:ami=ami-0ae86208aad96a06e). Otherwise,
+continue reading below.
+
+### Launch instance
+
+### Choose an image
+
+### Create or choose a key pair
+
+### Set up a security group
+
+### Final steps
+
+### Connecting
 
 ## Manual Installation
 
