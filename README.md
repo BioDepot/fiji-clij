@@ -185,7 +185,74 @@ images you do not wish to use, or move them to another directory.
 
 ## More on the AMI
 
+The AMI contains an installation of Ubuntu 20.04 with Docker and
+NVIDIA graphics driver packages preinstalled, as well as several
+utility scripts for using the workflow, in the home directory of the
+`ubuntu` user.
 
+If you are using a `g4dn` instance (recommended, since an NVIDIA GPU
+is required for the workflow) then your instance will have an
+ephemeral "instance store" drive physically attached to the machine;
+this is where the workflow, image data, and results will be
+stored. This drive will be mounted at `/mnt/data`, which is
+symbolically linked to `data` in the home directory. You can simply do
+`cd data` to access the drive. If you are using an instance that
+doesn't have an instance store drive, `/mnt/data` will simply be a
+regular directory, and is still usable for storing data.
+
+### General/setup scripts
+
+* `./start_all.sh` - **Recommended for a quick start.** Runs all the
+  setup scripts in order, and then starts the Bwb server.
+
+The individual setup scripts are (in recommended execution order):
+
+* `./mount_disks.sh` - Formats the instance store drive(s) and then
+  mounts them to `/mnt/data` (if any). If multiple instance store
+  drives are present, they will be formatted into a RAID-0 array and
+  presented as one large disk. **Must be done before any other
+  operations if you wish to use the instance store drive** -
+  otherwise, the root volume will be used.
+* `./download_workflow.sh` - Downloads the latest version of this
+  workflow to `/mnt/data` via `git clone`. If another version of the
+  workflow already exists, it will be updated via `git pull`.
+* `./update_bwb.sh` - Downloads the latest version of the Bwb Docker
+  image available on DockerHub.
+* `./start_bwb.sh` - Starts the Bwb server.
+
+### S3 backup scripts (optional)
+
+These scripts are intended to allow you to store a backup of your
+data/analysis results on Amazon S3, since the instance store drive on
+which they are stored is deleted when the instance shuts down. 
+
+These scripts will not work out of the box, and require AWS
+credentials to be set up first. If you have not already, you will need
+to generate an access key for the AWS Command-Line Interface by
+logging in to the AWS console, clicking on your username at the
+top-right, and selecting "Security Credentials". Once on that page,
+click "Create access key" and make sure to save the credentials that
+you are given, since you *won't be able to access them through the
+console again.*
+
+Once you have an access key and an access key secret, run the command
+```bash
+aws configure
+```
+and enter the access key and secret when prompted. Afterwards, you
+should be able to use the scripts.
+
+* `./create_bucket.sh` - This script will create an S3 bucket for the
+  backup data (if one does not already exist).
+* `./pull_backup1.sh` - This script will download the contents of
+  `backup1` (i.e. the most recent backup) on S3 to the instance store
+  drive.
+* `./sync_data.sh` - This script will create a new backup by moving
+  `backup1` to `backup2` on S3, and then copying the contents of the
+  instance store drive to `backup1` on S3.
+* `./sync_start_bwb.sh` - This script will create a new backup (by
+  calling `./sync_data.sh`) first, and then start Bwb (by calling
+  `./start_bwb.sh`).
 
 ## Licensing
 
