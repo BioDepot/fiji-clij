@@ -48,7 +48,7 @@ the top-right corner next to your username) is set to `us-east-2`
 (Ohio), since the AMI is stored in that region.
 
 If you are using the AMI, you may skip the steps [Launch
-instance](#launch-instance) and [Choose an image](#choose-an-image)
+instance](#launch-instance) and [Choose an OS image](#choose-an-os-image)
 below by using [this
 link](https://console.aws.amazon.com/ec2/v2/home?region=us-east-2#LaunchInstanceWizard:ami=ami-0ae86208aad96a06e). Otherwise,
 continue reading below.
@@ -59,9 +59,58 @@ Go to the [EC2
 Console](https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Home:),
 and press the orange "Launch Instance" button.
 
-![A screenshot of the EC2 console, with the orange "Launch Instance" button indicated.](readme-images/launch-instance.png)
+![A screenshot of the EC2 console, with the orange "Launch Instance"
+button indicated.](readme-images/launch-instance.png)
 
-### Choose an image
+The "Launch an instance" form will come up; first, give your instance
+a name in the box at the top of the screen.
+
+![A screenshot of the instance name field in the "Launch an instance"
+form.](readme-images/instance-name.png)
+
+### Choose an OS image
+
+Next, go down to the "Application and OS Images" section on the form,
+and make sure the "Quick Start" tab is selected. 
+
+![A screenshot of the "Application and OS Images" section on the form,
+with the "Quick Start" tab selected.](readme-images/choose-image.png)
+
+#### Option 1: If You Are Using the AMI
+
+To select the AMI, click the "Browse more AMIs" button to the
+right. Then, once the "Choose an Amazon Machine Image" page comes up,
+select the "Community AMIs" tab, and search for
+`bwb-clij-benchmarking-latest` to find the latest version of the
+AMI. (Alternatively, you can search `bwb-clij-benchmarking` to bring
+up specific versions to use.) 
+
+Available versions are:
+* `bwb-clij-benchmarking-latest` (AMI ID: `ami-0ae86208aad96a06e`) 
+  * _NOTE_: The "latest" AMI is just a copy of the latest version of
+    the AMI, but under a name that is easier to search; when a new
+    version is released, the "latest" AMI is deleted and replaced with
+    a copy of the new latest version.
+* `bwb-clij-benchmarking_v0.4_20220926` (AMI ID: `ami-0a86efe9d0f29abf6`)
+* `clij-benchmarking_v0.3_2022-07-05` (AMI ID: `ami-0e4eb88d9cacd5be9`)
+
+
+![A screenshot of the "Choose an Amazon Machine Image" form, with the
+latest version of the Bwb CLIJ AMI
+shown.](readme-images/choose-ami.png)
+
+When you have found the version of the AMI you want to use, click the
+orange "Select" button on the right.
+
+#### Option 2: If You Are Doing Manual Setup
+
+If you are doing manual setup, click the "Ubuntu" button in the list
+of operating systems and then choose Ubuntu Server 20.04 LTS from the
+drop-down menu.
+
+![A screenshot of the "Application and OS Images" section on the form,
+with Ubuntu Server 20.04 LTS
+selected.](readme-images/choose-image-manual.png)
 
 ### Create or choose a key pair
 
