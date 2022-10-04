@@ -366,7 +366,8 @@ information.
 ## References
 
 * CLIJ
-	> Robert Haase, Loic Alain Royer, Peter Steinbach, Deborah Schmidt,
+
+    > Robert Haase, Loic Alain Royer, Peter Steinbach, Deborah Schmidt,
 	>     Alexandr Dibrov, Uwe Schmidt, Martin Weigert, Nicola Maghelli,
 	>     Pavel Tomancak, Florian Jug, Eugene W Myers. CLIJ: GPU-accelerated
 	>     image processing for everyone. Nat Methods 17, 5-6 (2020)
@@ -376,7 +377,9 @@ information.
  
 * Dataset used is the one given in the Supplementary Materials section of the
   CLIJ paper:
-  https://doi.org/10.17617/1.8J
+  
+    > Haase, R. (2019). Workflow benchmarking data, drosophila
+	>	  lightsheet. doi:10.17617/1.8J
 
 * Fiji:
   
