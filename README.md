@@ -160,7 +160,7 @@ nvidia-smi
 ### Choose a working directory
 When it is run, the workflow will create a directory called `benchmark` in your
 current working directory, which will contain all data generated or downloaded
-by the workflow (including ~30GB of images). Before cloning the workflow
+by the workflow (including ~40GB of images). Before cloning the workflow
 repository, choose an appropriate working directory, and navigate to it with
 `cd`. For example, if we wanted to store the workflow and all its data in
 `Documents`, we would use
@@ -259,9 +259,11 @@ depending on how many images are used - the runtime scales linearly with the
 number of images used, since images are sequentially processed.
    
 ### Modifying parameters
-By default, the workflow uses 300 images from the [dataset used in the CLIJ
-paper](https://doi.org/10.17617/1.8J) for benchmarking; this can be adjusted by
-double clicking on the "Download Images" widget and modifying the parameters.
+By default, the workflow uses 300 images from the [dataset used in the
+CLIJ paper](https://doi.org/10.17617/1.8J) for benchmarking; this can
+be adjusted by double clicking on the "Download Images" widget and
+modifying the parameters. Each image is ~127MB, so 300 images will
+occupy ~38GB.
 
 The entire dataset consists of 607 images, numbered `000000` through `000606`;
 the "Pattern" field of the "Download Images" widget contains a [`printf`-style format
