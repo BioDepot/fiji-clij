@@ -5,11 +5,12 @@ This repository contains a workflow for the Biodepot-workflow-builder
 extension for the Fiji image processing suite allowing the use of GPUs
 for accelerated processing (using OpenCL).
 
-The workflow implemented is the one described in the Supplementary Materials
-section of the original CLIJ paper (see [References](#References) below), with
-some modifications to adapt it to the Bwb platform. Like all Bwb workflows, the
-benchmarking workflow is containerized, which means it can be deployed on a more
-powerful cloud server with minimal effort, and does not require installation of
+The workflow implemented is the one described in the Supplementary
+Materials section of the original CLIJ paper (see
+[References](#References) below), with some modifications to adapt it
+to the Bwb platform. Like all Bwb workflows, the benchmarking workflow
+is containerized, which means it can be deployed on a more powerful
+cloud server with minimal effort, and does not require installation of
 anything besides Docker (and video drivers).
 
 ## Requirements
@@ -53,6 +54,12 @@ link](https://console.aws.amazon.com/ec2/v2/home?region=us-east-2#LaunchInstance
 continue reading below.
 
 ### Launch instance
+
+Go to the [EC2
+Console](https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Home:),
+and press the orange "Launch Instance" button.
+
+![A screenshot of the EC2 console, with the orange "Launch Instance" button indicated.](readme-images/launch-instance.png)
 
 ### Choose an image
 
