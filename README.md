@@ -56,8 +56,9 @@ continue reading below.
 ### Launch instance
 
 Go to the [EC2
-Console](https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Home:),
-and press the orange "Launch Instance" button.
+Console](https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Home:)
+(can also be found by searching "EC2" from the main AWS console), and
+press the orange "Launch Instance" button.
 
 ![A screenshot of the EC2 console, with the orange "Launch Instance"
 button indicated.](readme-images/launch-instance.png)
@@ -70,8 +71,9 @@ form.](readme-images/instance-name.png)
 
 ### Choose an OS image
 
-Next, go down to the "Application and OS Images" section on the form,
-and make sure the "Quick Start" tab is selected. 
+Next, you will need to choose an operating system image to be
+installed on the instance. Scroll down to the "Application and OS Images"
+section on the form, and make sure the "Quick Start" tab is selected.
 
 ![A screenshot of the "Application and OS Images" section on the form,
 with the "Quick Start" tab selected.](readme-images/choose-image.png)
@@ -111,6 +113,22 @@ drop-down menu.
 ![A screenshot of the "Application and OS Images" section on the form,
 with Ubuntu Server 20.04 LTS
 selected.](readme-images/choose-image-manual.png)
+
+### Choose an instance type
+
+Next, you will need to choose the type of instance you wish to launch;
+this will configure the hardware installed on the instance (CPU cores,
+memory, etc.). Scroll down to the "Instance type" section of the
+form. Then, click the drop-down menu and search for `g4dn`; the [G4dn
+instances](https://aws.amazon.com/ec2/instance-types/g4/#Amazon_EC2_G4dn_Instances)
+have NVIDIA GPUs installed, which are currently required for the
+workflow. You can choose any of the G4dn instance types; they have
+varying CPU core counts and memory/storage sizes (but larger ones may
+also cost more per hour). We have tested the workflow on
+`g4dn.2xlarge` instances, so we recommend this instance type.
+
+![A screenshot of the "Instance Type" section on the form, with
+`g4dn.2xlarge` selected.](readme-images/instance-type.png)
 
 ### Create or choose a key pair
 
