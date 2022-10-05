@@ -158,11 +158,49 @@ format.](readme-images/create-key-pair.png)
 
 Then, click the orange "Create key pair" button when you are
 finished. The private key file will download in your web browser; for
-security reasons, _*you will not be able to download it again*_, so hold
+security reasons, _**you will not be able to download it again**_, so hold
 onto it! If you lose access to your private key, you may be unable to
 access your instance.
 
 ### Set up a security group
+
+Next, you will need to set up a firewall security group, to allow
+access to the Bwb server that will run on your instance. Scroll down
+to the "Network settings" section of the form, and press the "Edit"
+button in the top right.
+
+![A screenshot of the "Network settings" section of the form, with the
+"Edit" button indicated.](readme-images/edit-network-settings.png)
+
+After doing so, you can optionally give the security group your own
+name and description (or just use the one already generated for you);
+then, press "Add security group rule" until there are three security
+group rules (the form starts with one).
+
+For each of the rules, you will be able to choose whether you would
+like to allow incoming traffic from any computer ("Anywhere") or only
+from the public IP address of your network ("My IP"). Anywhere will
+allow access if your computer changes networks, **but will allow
+_anyone_ with the address to access your Bwb virtual desktop, and
+possibly files on the instance** that are mapped to data volumes in
+Bwb.
+
+Set up the security group rules like so:
+1. **Description**: "SSH access"
+  * **Type**: "ssh"
+  * **Source Type**: "Anywhere" or "My IP" (see above)
+2. **Description**: "HTTP access for Bwb"
+  * **Type**: "Custom TCP"
+  * **Port Range**: 6080
+  * **Source Type**: "Anywhere" or "My IP" (see above)
+3. **Description**: "VNC access for Bwb"
+  * **Type**: "Custom TCP"
+  * **Port Range**: 5900
+  * **Source Type**: "Anywhere" or "My IP" (see above)
+  
+![A screenshot of the security group rules form, with the above
+settings entered. The author's IP address is
+obscured.](readme-images/security-group-rules.png)
 
 ### Final steps
 
