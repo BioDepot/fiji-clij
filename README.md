@@ -204,6 +204,26 @@ obscured.](readme-images/security-group-rules.png)
 
 ### Final steps
 
+Finally, scroll down to the "Configure storage" section of the form,
+and ensure that the size of the root volume is 100GB, and the type is
+"gp3". If you are using the AMI, this should already be set correctly;
+if you are doing manual setup, you will need to set this yourself.
+
+If you are doing manual setup, you don't necessarily need to make the
+root volume 100GB, but keep in mind that the root volume must hold the
+operating system, Docker images, and GPU drivers.
+
+![A screenshot of the "Configure storage" section of the form, showing
+one 100GB gp3 root volume.](readme-images/storage.png)
+
+Then, when you have verified that all settings are correct and are
+ready to launch the instance, click the orange "Launch instance"
+button in the "Summary" column on the side of the screen.
+
+![A screenshot of the "Summary" column, showing a summary of the
+settings we have entered so far, and the orange "Launch instance"
+button.](readme-images/summary.png)
+
 ### Connecting
 
 ## Manual Installation
