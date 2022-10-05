@@ -29,6 +29,20 @@ If using an AWS cloud server, the use of our Amazon Machine Image
 the necessary GPU drivers and scripts to run the workflows
 preinstalled. See [Using the AMI](#using-the-ami) below.
 
+Additionally, AWS may impose a limit (often 0!) on the number of vCPUs
+(_not_ the number of instances) on GPU-enabled instances that new
+users may create; you may need to request a limit increase if this is
+the case. The recommended instance type (`g4dn.2xlarge`) has 8
+vCPUs. You can check your current limits at
+[https://*us-east-2*.console.aws.amazon.com/ec2/home?region=*us-east-2*#Limits](https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Limits)
+(replace `us-east-2` with your desired region) by searching for
+"Running on-demand G instances". If it is too low (or zero) you can
+select it and press "Request limit increase".
+
+![A screenshot of the Limits section on the EC2 console, showing the
+current limit on "Running On-Demand All G and VT
+Instances".](readme-images/limits.png)
+
 If you are not using an AWS cloud server or you do not wish to use the
 AMI, see [Manual Installation](#manual-installation) below.
 
