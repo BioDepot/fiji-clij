@@ -132,6 +132,36 @@ also cost more per hour). We have tested the workflow on
 
 ### Create or choose a key pair
 
+Next, you will need to create an SSH key pair (or choose one that you
+have previously created) to be installed onto the instance. A key pair
+consists of a private key, which will be downloaded onto your computer
+and used to access the instance, and a public key, which will be
+installed onto the instance. Scroll down to the "Key pair (login)"
+section in the form.
+
+![A screenshot of the "Key pair (login)" section on the
+form.](readme-images/key-pair.png)
+
+If you have already done this before (unlikely for new users), and
+still have access to the key file, select the key pair you previously
+created from the drop-down menu, and continue to the next step. 
+
+Otherwise, click the "Create new key pair" link. A window will pop up
+where you can give the key pair a name and optionally choose what key
+type you would like to create. You can leave the key pair type as
+"RSA"; then, for the private key format, choose ".pem" (unless you
+wish to use PuTTY; see [Connecting](#connecting) below).
+
+![A screenshot of the "Create key pair" dialog, with "RSA" selected
+for the key pair type, and ".pem" selected for the private key file
+format.](readme-images/create-key-pair.png)
+
+Then, click the orange "Create key pair" button when you are
+finished. The private key file will download in your web browser; for
+security reasons, _*you will not be able to download it again*_, so hold
+onto it! If you lose access to your private key, you may be unable to
+access your instance.
+
 ### Set up a security group
 
 ### Final steps
