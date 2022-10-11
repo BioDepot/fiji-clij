@@ -240,6 +240,38 @@ button.](readme-images/summary.png)
 
 ### Connecting
 
+Once your instance is launched, you will need to log in to it and
+start the Bwb server. You will need a terminal with a Secure Shell
+(SSH) client installed; for users of Mac and Linux distributions, the
+built-in terminal application should work; for Windows users, you will
+need to install one. There are a few options like
+[MobaXterm](https://mobaxterm.mobatek.net/) or
+[Cygwin](https://www.cygwin.com) (you may need to ensure that SSH
+packages are installed), or [PuTTY](https://putty.org/) if you prefer
+a graphical client.
+
+#### Finding your instance's address
+
+Once your instance has launched, you can click the instance ID
+(highlighted as a blue hyperlink) in the success message to go to
+the instance details screen.
+
+![A screenshot of the "success" message after launching an instance,
+showing the instance ID highlighted in blue, which can be clicked to
+go to the instance details screen.](readme-images/instance-link.png)
+
+You will then be taken to the "Instances" screen; a filter will be
+applied so that the only instance listed is the one you just
+launched. Click on it in the list, and more information should appear
+in the pane at the bottom. You will want to locate the "Public IPv4
+Address" section, and copy the IP address shown there. This is the
+public IP address of your instance, which we will need later to
+connect to it. **Note that anyone with this address can access the Bwb
+server on your instance, so don't share it!**
+
+![A screenshot of the "Instances" screen, with a newly created
+instance selected; the "Public IPv4 Address" section in the details
+pane is highlighted.](readme-images/instance-address.png)
 ## Manual Installation
 
 ### Installing GPU Drivers
