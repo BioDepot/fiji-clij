@@ -317,27 +317,6 @@ Navigate into the repository with
 cd fiji-clij
 ```
 
-### Building Docker Images
-*TODO*: Remove this section if images are uploaded to DockerHub.
-
-The widgets in this workflow use several custom Docker images that are not
-available on the central Docker Hub repository, and need to be built on the host
-machine; the most notable is the `fijiOCL` widget which contains GPU drivers and
-OpenCL libraries for running Fiji with CLIJ. To build the Docker images, simply
-navigate to the *root directory of the repository* and run
-```bash
-sudo ./build_docker_images.sh
-```
-Note that you will need root access on the host machine.
-
-**NOTE:** It is important that this script is run from the root directory, as it
-uses this assumption to navigate into directories containing relevant
-`Dockerfile`s. The script will pause for 5 seconds to allow the user to confirm
-that they are indeed in the root directory; to bypass this, run
-```bash
-sudo NOSLEEP=1 ./build_docker_images.sh
-```
-
 ### Start the Bwb server
 Run the command
 
