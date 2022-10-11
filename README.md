@@ -307,9 +307,8 @@ pane is highlighted.](readme-images/instance-address.png)
 #### Connecting using a terminal (Mac, Linux, MobaXterm/Cygwin)
 
 First, locate the private key file you downloaded in the previous
-steps (it will have a `.pem` or `.ppk` extension, and will often be
-located in the "Downloads" folder). Then, open your terminal
-application.
+steps (it will have a `.pem` extension, and will often be located in
+the "Downloads" folder). Then, open your terminal application.
 
 For Linux and Mac users, if it is the first time connecting to the
 instance, you will need to change the permissions on the private key;
@@ -359,6 +358,44 @@ mentioned above and the welcome message from the instance, as well as
 the instance's command prompt.](readme-images/terminal.png)
 
 #### Connecting Using PuTTY
+
+First, locate the private key you downloaded earlier (it will have a
+`.pem` or `.ppk` extension, and will often be located in the
+"Downloads" folder). If if has a `.ppk` extension, continue on to the
+next paragraph; if it has a `.pem` extension instead of `.ppk`, then
+we will need to convert it to the PPK format to use it in
+PuTTY. Open the PuTTYGen program, press the "Load" button, and find
+your private key file; you will likely have to change the filter in
+the file window from "PuTTY Private Key Files (*.ppk)" to "All
+Files". Then, once you have opened the file, press "Save private key"
+and choose a location and file name (make sure it ends in the `.ppk`
+extension) for the converted private key file.
+
+![A screenshot of the PuTTYGen program, with the "Load" and "Save
+private key" buttons highlighted.](readme-images/puttygen.png)
+
+If you have ensured that your private key is in PPK format, then open
+the main PuTTY program. You will then need to set the following
+settings:
+* **Session** > **Host Name (or IP address)**: set to the instance IP
+  address you located earlier in the AWS console.
+* **Connection** > **Data** > **Auto-login username**: Set to "ubuntu".
+* **Connection** > **SSH** > **Auth** > **Private key file for
+  authentication**: click "Browse" and locate the PPK private key
+  file.
+  
+You may wish to save this session using the "Saved Sessions" section
+under the "Session" tab, but keep in mind that the IP address may
+change if you stop your instance and restart it.
+
+After entering these settings, click "Open" to begin connecting. A
+terminal window will open, where you should get a long welcome message
+with the current system information of your instance; when this
+happens, you are ready to move on to [Starting the Bwb
+server](#starting-the-bwb-server-using-the-ami) below.
+
+![Three screenshots of the PuTTY Configuration window, showing the
+settings mentioned above.](readme-images/putty.png)
 
 #### Starting the Bwb server (using the AMI)
 
