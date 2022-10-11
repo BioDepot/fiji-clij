@@ -312,9 +312,16 @@ connect; this happens the first time you connect to a new computer via
 SSH, since your client has never seen its public key before. Type
 "yes" and press Enter to continue connecting.
 
+Note that your instance might take a while (often less than 5 minutes)
+to actually start its operating system, and so it might reject your
+connection if it is not ready yet. If this happens, just wait a while
+and retry. In many terminal applications, you can retry a previous
+command by pressing the up arrow and then Enter.
+
 Once you have connected, you will get a long welcome message with the
 current system information of your instance, and you are ready to move
-on to [Starting the Bwb server](#starting-the-bwb-server) below.
+on to [Starting the Bwb
+server](#starting-the-bwb-server-using-the-ami) below.
 
 ![A screenshot of an Ubuntu Linux terminal, showing the commands
 mentioned above and the welcome message from the instance, as well as
@@ -322,9 +329,21 @@ the instance's command prompt.](readme-images/terminal.png)
 
 #### Connecting Using PuTTY
 
-#### Starting the Bwb server
+#### Starting the Bwb server (using the AMI)
 
+If you are using the AMI, once you have logged into the instance, you
+can perform all necessary setup and start the Bwb server with the
+following command:
+```bash
+./start_all.sh
+```
 
+For more information about what this command does, see [General/Setup
+Scripts](#generalsetup-scripts) below.
+
+If you are not using the AMI, see [Start the Bwb
+server](#start-the-bwb-server) under [Manual
+Installation](#manual-installation) below.
 
 ## Manual Installation
 
