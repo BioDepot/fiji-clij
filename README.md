@@ -13,6 +13,37 @@ is containerized, which means it can be deployed on a more powerful
 cloud server with minimal effort, and does not require installation of
 anything besides Docker (and video drivers).
 
+## Table of Contents
+- [Requirements](#requirements)
+- [AWS Setup](#aws-setup)
+  * [Launch instance](#launch-instance)
+  * [Choose an OS image](#choose-an-os-image)
+    + [Option 1: If You Are Using the AMI](#option-1-if-you-are-using-the-ami)
+    + [Option 2: If You Are Doing Manual Setup](#option-2-if-you-are-doing-manual-setup)
+  * [Choose an instance type](#choose-an-instance-type)
+  * [Create or choose a key pair](#create-or-choose-a-key-pair)
+  * [Set up a security group](#set-up-a-security-group)
+  * [Final steps](#final-steps)
+  * [Connecting](#connecting)
+    + [Finding your instance's address](#finding-your-instances-address)
+    + [Connecting using a terminal (Mac, Linux, MobaXterm/Cygwin)](#connecting-using-a-terminal-mac-linux-mobaxtermcygwin)
+    + [Connecting Using PuTTY](#connecting-using-putty)
+    + [Starting the Bwb server (using the AMI)](#starting-the-bwb-server-using-the-ami)
+- [Manual Installation](#manual-installation)
+  * [Installing GPU Drivers](#installing-gpu-drivers)
+  * [Choose a working directory](#choose-a-working-directory)
+  * [Cloning repository](#cloning-repository)
+  * [Start the Bwb server](#start-the-bwb-server)
+- [Usage](#usage)
+  * [Connect to Bwb with a browser or VNC client](#connect-to-bwb-with-a-browser-or-vnc-client)
+  * [Loading the workflow](#loading-the-workflow)
+  * [Modifying parameters](#modifying-parameters)
+- [More on the AMI](#more-on-the-ami)
+  * [General/setup scripts](#generalsetup-scripts)
+  * [S3 backup scripts (optional)](#s3-backup-scripts-optional)
+- [Licensing](#licensing)
+- [References](#references)
+
 ## Requirements
 
 The workflow should be run on a machine with an NVIDIA GPU and
