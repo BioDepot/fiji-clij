@@ -272,6 +272,58 @@ server on your instance, so don't share it!**
 ![A screenshot of the "Instances" screen, with a newly created
 instance selected; the "Public IPv4 Address" section in the details
 pane is highlighted.](readme-images/instance-address.png)
+
+#### Connecting using a terminal (Mac, Linux, MobaXterm/Cygwin)
+
+First, locate the private key file you downloaded in the previous
+steps (it will have a `.pem` or `.ppk` extension, and will often be
+located in the "Downloads" folder). Then, open your terminal
+application.
+
+For Linux and Mac users, if it is the first time connecting to the
+instance, you will need to change the permissions on the private key;
+for security, SSH clients often refuse to use private keys if they are
+accessible by other users on the system. Run the following command,
+replacing `<path to private key>` with the file path to the private
+key file you located; this can often be inserted by dragging and
+dropping the file onto the terminal window.
+```bash
+# Set permissions of private key to 0400 (read-only for you, no
+#  access for any other users)
+chmod 400 <path to private key>
+```
+You do not need to do this more than once; if you have used this
+key already, move on to the next paragraph.
+
+Finally, you can connect using the following command, replacing `<path
+to private key>` with the file path to the private key (can often be
+inserted by dragging and dropping the file onto the terminal window),
+and `<instance IP address>` with the instance's public IP address that
+you located earlier in the AWS console.
+```bash
+ssh -i <path to private key> ubuntu@<instance IP address>
+```
+
+You may get a warning saying something like "The authenticity of host
+'X.X.X.X' can't be established", and asking if you still want to
+connect; this happens the first time you connect to a new computer via
+SSH, since your client has never seen its public key before. Type
+"yes" and press Enter to continue connecting.
+
+Once you have connected, you will get a long welcome message with the
+current system information of your instance, and you are ready to move
+on to [Starting the Bwb server](#starting-the-bwb-server) below.
+
+![A screenshot of an Ubuntu Linux terminal, showing the commands
+mentioned above and the welcome message from the instance, as well as
+the instance's command prompt.](readme-images/terminal.png)
+
+#### Connecting Using PuTTY
+
+#### Starting the Bwb server
+
+
+
 ## Manual Installation
 
 ### Installing GPU Drivers
