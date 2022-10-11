@@ -288,8 +288,8 @@ replacing `<path to private key>` with the file path to the private
 key file you located; this can often be inserted by dragging and
 dropping the file onto the terminal window.
 ```bash
-# Set permissions of private key to 0400 (read-only for you, no
-#  access for any other users)
+# Set permissions of private key to 0400 
+#   (read-only for you, no access for any other users)
 chmod 400 <path to private key>
 ```
 You do not need to do this more than once; if you have used this
@@ -301,6 +301,8 @@ inserted by dragging and dropping the file onto the terminal window),
 and `<instance IP address>` with the instance's public IP address that
 you located earlier in the AWS console.
 ```bash
+# Log into user "ubuntu" on <instance IP address>, using the
+#  key at <path to private key> for authentication
 ssh -i <path to private key> ubuntu@<instance IP address>
 ```
 
