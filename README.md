@@ -338,6 +338,10 @@ following command:
 ./start_all.sh
 ```
 
+The script will output messages describing what it is doing; once you
+see success messages, you can move on to the [Usage](#usage) section
+to see how to connect to Bwb and run the workflow.
+
 For more information about what this command does, see [General/Setup
 Scripts](#generalsetup-scripts) below.
 
