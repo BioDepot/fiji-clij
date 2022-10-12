@@ -3,7 +3,8 @@
 This repository contains a workflow for the Biodepot-workflow-builder
 (Bwb) implementing a benchmarking workflow for CLIJ, a library and
 extension for the Fiji image processing suite allowing the use of GPUs
-for accelerated processing (using OpenCL).
+for accelerated processing (using OpenCL). Our goal is to provide an open-source methodology that allows
+users to utilize GPUs to process their image data using on-demand cloud computing. 
 
 The workflow implemented is the one described in the Supplementary
 Materials section of the original CLIJ paper (see
@@ -11,7 +12,9 @@ Materials section of the original CLIJ paper (see
 to the Bwb platform. Like all Bwb workflows, the benchmarking workflow
 is containerized, which means it can be deployed on a more powerful
 cloud server with minimal effort, and does not require installation of
-anything besides Docker (and video drivers).
+anything besides Docker (and video drivers). This repository provides detailed instructions on how to set up and launch CLIJ in the Bwb using Amazon Web Services (AWS). 
+
+CITATION for this work: Accelerated and Reproducible Fiji for image processing using GPUs on the cloud. Ling-Hong Hung, Evan Straw, Zachary Colburn, Ka Yee Yeung. Pre-print bioRxiv 10.1101/2022.07.15.500283. doi: https://doi.org/10.1101/2022.07.15.500283
 
 ## Table of Contents
 - [Requirements](#requirements)
@@ -511,25 +514,25 @@ Amazon web services are provided
 3. Double click on the "Start" widget and press the blue "Start" button to start
    the workflow. 
    
-The workflow will download images and benchmarking macros, and then perform the
+The workflow will download image data and benchmarking macros, and then perform the
 same sequence of image processing operations on the dataset using both the
 GPU and the CPU, and then compare the runtime and results of the two analyses.
 
 Please note that the CPU benchmark may take a very long time to complete
-depending on how many images are used - the runtime scales linearly with the
-number of images used, since images are sequentially processed.
+depending on how many image datasets are used - the runtime scales linearly with the
+number of image datasets used, since image data are sequentially processed.
    
 ### Modifying parameters
 By default, the workflow uses 300 images from the [dataset used in the
 CLIJ paper](https://doi.org/10.17617/1.8J) for benchmarking; this can
 be adjusted by double clicking on the "Download Images" widget and
-modifying the parameters. Each image is ~127MB, so 300 images will
+modifying the parameters. Each image dataset is ~127MB, so 300 image datasets will
 occupy ~38GB.
 
 The entire dataset consists of 607 images, numbered `000000` through `000606`;
 the "Pattern" field of the "Download Images" widget contains a [`printf`-style format
 string](https://en.wikipedia.org/wiki/Printf_format_string); by default it is
-the URL of one of these images, with a `%06d` placeholder that will be replaced
+the URL of one of these image datasets, with a `%06d` placeholder that will be replaced
 by an image number, zero-padded to be 6 digits long. The number will range from
 the value in the "Minimum Value" field to the value in the "Maximum Value"
 field, inclusively, and files will be placed in the directory specified in the
@@ -538,10 +541,10 @@ can be used to control whether existing files should be replaced; since the
 dataset is very large, the user may choose to only download missing files and
 skip existing ones.
 
-Note that for simplicity, the benchmarking workflows will use **all** the images
-in the chosen output directory; if you have already downloaded images once, and
-wish to re-run the workflow with a smaller subset of images, either delete the
-images you do not wish to use, or move them to another directory.
+Note that for simplicity, the benchmarking workflows will use **all** the image datasets
+in the chosen output directory; if you have already downloaded image data once, and
+wish to re-run the workflow with a smaller subset of image data, either delete the
+image data you do not wish to use, or move them to another directory.
 
 ## More on the AMI
 
