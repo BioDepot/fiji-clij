@@ -98,6 +98,9 @@ below by using [this
 link](https://console.aws.amazon.com/ec2/v2/home?region=us-east-2#LaunchInstanceWizard:ami=ami-0ae86208aad96a06e). Otherwise,
 continue reading below.
 
+Additionally, these instructions are available in video form here:
+https://youtu.be/Z_SHw1mU2JM
+
 ### Launch instance
 
 Go to the [EC2
